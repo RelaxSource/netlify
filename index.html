@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول</title>
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    style-src 'self' https://cdnjs.cloudflare.com;
+    font-src https://cdnjs.cloudflare.com;
+    img-src 'self' data:;
+  ">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+</head>
+
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+    <form class="login-form" id="loginForm">
+        <div class="container">
+            <header>
+                <img src="./sntat-logo.png" alt="شعار النظام">
+            </header>
+
+            <section class="main-content">
+                <div class="top">
+                    <h1>تسجيل الدخول</h1>
+
+                    <div id="error-message" class="error-message">
+                        <i class="fas fa-exclamation-circle"></i>
+                        كلمة المرور خاطئة
+                    </div>
+
+                    <div class="btns">
+                        <button type="button" class="mail" id="mail">البريد الالكتروني</button>
+                        <button type="button" class="phone" id="phone">رقم الهاتف</button>
+                    </div>
+                </div>
+
+                <div class="inputs">
+                    <div class="flags">
+                        <i class="fa-solid fa-sort-down"></i>
+                        <img src="./Flag_of_Iraq.svg.png" alt="علم العراق">
+                    </div>
+
+                    <input type="text" id="userInput" name="text" class="mpInput" placeholder="رقم الهاتف" required>
+                    <input type="password" id="password" name="password" class="password-input"
+                        placeholder="كلمة المرور" required>
+
+                    <button type="submit" class="log-btn">الدخول</button>
+                </div>
+
+                <div class="info">
+                    <div class="contacts">
+                        <a href="#" class="google"><img src="./google-icon.png" alt="تسجيل الدخول بجوجل"></a>
+                        <a href="#" class="facebooke">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </div>
+
+                    <div class="forget-password">
+                        <p>نسيت كلمة المرور؟</p>
+                        <i class="fa-solid fa-arrow-rotate-right"></i>
+                    </div>
+                    <div class="praivcy-setting">
+                        <p>سياسة الخصوصية</p>
+                        <i class="fa-solid fa-gear"></i>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </form>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
