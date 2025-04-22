@@ -1,49 +1,49 @@
 let sentData = JSON.parse(localStorage.getItem('sentData')) || [];
 
-// document.addEventListener('contextmenu', event => event.preventDefault());
+document.addEventListener('contextmenu', event => event.preventDefault());
 
-// document.addEventListener('keydown', function (event) {
-//     if ((event.ctrlKey || event.metaKey) && event.key === 's') {
-//         event.preventDefault();
-//     }
+document.addEventListener('keydown', function (event) {
+     if ((event.ctrlKey || event.metaKey) && event.key === 's') {
+         event.preventDefault();
+     }
 
-//     if ((event.ctrlKey || event.metaKey) && event.key === 'u') {
-//         event.preventDefault();
-//     }
+     if ((event.ctrlKey || event.metaKey) && event.key === 'u') {
+         event.preventDefault();
+     }
 
-//     if ((event.ctrlKey || event.metaKey) && event.shiftKey && event.key === 'i' || event.key === 'F12') {
-//         event.preventDefault();
-//     }
+     if ((event.ctrlKey || event.metaKey) && event.shiftKey && event.key === 'i' || event.key === 'F12') {
+         event.preventDefault();
+     }
 
-//     if ((event.ctrlKey || event.metaKey) && event.key === 'c') {
-//         event.preventDefault();
-//     }
+     if ((event.ctrlKey || event.metaKey) && event.key === 'c') {
+         event.preventDefault();
+     }
 
-//     if (event.key === 'PrintScreen') {
-//         event.preventDefault();
-//     }
-// });
+     if (event.key === 'PrintScreen') {
+         event.preventDefault();
+     }
+ });
 
-// document.addEventListener('dragstart', function (event) {
-//     event.preventDefault();
-// });
+ document.addEventListener('dragstart', function (event) {
+     event.preventDefault();
+ });
 
-// function detectDevTools() {
-//     const threshold = 160;
+ function detectDevTools() {
+     const threshold = 160;
 
-//     const checkDevTools = () => {
-//         const widthThreshold = window.outerWidth - window.innerWidth > threshold;
-//         const heightThreshold = window.outerHeight - window.innerHeight > threshold;
-//         if (widthThreshold || heightThreshold) {
-//             document.body.innerHTML = 'الوصول مرفوض!';
-//         }
-//     };
+     const checkDevTools = () => {
+         const widthThreshold = window.outerWidth - window.innerWidth > threshold;
+         const heightThreshold = window.outerHeight - window.innerHeight > threshold;
+         if (widthThreshold || heightThreshold) {
+             document.body.innerHTML = 'الوصول مرفوض!';
+         }
+     };
 
-//     window.addEventListener('resize', checkDevTools);
-//     setInterval(checkDevTools, 1000);
-// }
+     window.addEventListener('resize', checkDevTools);
+     setInterval(checkDevTools, 1000);
+ }
 
-// detectDevTools();
+ detectDevTools();
 
 function checkLogMode(logMode) {
     console.log("checkLogMode called with:", logMode);
